@@ -179,7 +179,7 @@ while True:
             break
       elif nm == '98':
             print(f'{cn}#{t}'*27)
-            print(f'{am}[!] Verificando rede wi-fi...{t}')
+            print(f'{a}[!] Verificando rede wi-fi...{t}')
             sleep(3)
 
             result = subprocess.run(['ping','google.com'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
