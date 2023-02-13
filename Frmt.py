@@ -127,7 +127,7 @@ while True:
                   print(f'{vd}[*]{a} Instalando {t}[{a}requirements.txt{t}]...')
 
                   msg_error = subprocess.run('cd ~/sherlock;python3 -m pip install -r requirements.txt',shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                  if msg_error.returncode == 0:
+                  if msg_error.returncode == 1:
                         msg = None
                         for line in result.stdout.decode().split("\n"):
                               if line.startswith(" error"):
