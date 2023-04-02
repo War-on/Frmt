@@ -23,13 +23,13 @@ def recursos():
        )_/        \          /
       (@           `--------`
 
-{t}'''
+{t}\n'''
     print(img)
     print(f'{cn}={t}'*10,'Verificando requisitos',f'{cn}={t}'*10)
     sleep(3)
 
     if os.path.exists('/data/data/com.termux/files/usr/bin/git') == True:
-        print(f'\n>>{vd}${t}<< {cn}git...........[✔]{t}')
+        print(f'>>{vd}${t}<< {cn}git...........[✔]{t}')
         sleep(2)
 
     else:
