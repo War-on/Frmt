@@ -206,7 +206,7 @@ while True:
             animacao()
             print(f'{vd}[*]{a} Preparando para instalar{t} [{a}Bot (Whatsapp){t}]...')
             animacao()
-            print(f'{vd}[*]{a} Baixando dependências...')
+            print(f'{vd}[*]{a} Baixando dependências...{t}')
             sleep(3)
             subprocess.run('cd;pkg install nodejs -y;apt --fix-broken install -y;pkg install nodejs-lts;pkg install ffmpeg', shell=True)
             sleep(3)
