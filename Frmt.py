@@ -63,7 +63,6 @@ while True:
             from config import vcs_version
             os.system('clear')
             print(f'{vd}[*] Verifcando a versão...\n{t}')
-            sleep(3)
 
             if vcs_version.version == 'None':
                   print(f"{vm}\n[X] ERROR: A versão do Termux está desatualizado.{t}")
