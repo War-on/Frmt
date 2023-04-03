@@ -9,7 +9,7 @@ cn = '\033[36m' #ciano
 t = '\033[m' # final cor
 result = subprocess.run(['termux-info'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 if result.returncode == 0:
-    version = None
+    version = str(None)
     for line in result.stdout.decode().split("\n"):
         if line.startswith("TERMUX_VERSION"):
             version = line.split("=")[1]
