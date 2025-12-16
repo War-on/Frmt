@@ -1,1 +1,2 @@
-alert('XSS')
+alert(document.getElementsByTagName('form')[0]);
+
